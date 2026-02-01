@@ -1,0 +1,28 @@
+{
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.extraPaths": [
+        "./pages"
+    ],
+    "python-envs.pythonProjects": [
+        {
+            "path": "tests/test01_test.py",
+            "envManager": "ms-python.python:system",
+            "packageManager": "ms-python.python:pip"
+        },
+        {
+            "path": "Tests",
+            "envManager": "ms-python.python:system",
+            "packageManager": "ms-python.python:pip"
+        },
+        {
+            "path": "Pages",
+            "envManager": "ms-python.python:system",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:system"
+}

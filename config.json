@@ -1,0 +1,14 @@
+{
+    "Headless": "False",
+	"SlowMo": "0",
+	"DefaultNavigationTimeout": "120000",
+	"DefaultTimeout": "60000",
+
+ "common info" : {
+   "Url" : "https://practicetestautomation.com/practice-test-login/",
+   "ValidUserName" : "student",
+   "ValidPassword" : "Password123",
+   "InvalidUserName" : "student",
+   "InvalidPassword" : "testing"
+ }
+}

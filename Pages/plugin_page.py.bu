@@ -1,0 +1,23 @@
+from playwright.sync_api import Page, expect
+
+class PluginPage:
+    def __init__(self, page: Page):
+        self.page = page
+        self.plugin_btn = page.locator("#plugin-launch")
+        self.plugin_user = page.locator("#plugin-username")
+        self.plugin_pass = page.locator("#plugin-password")
+        self.submit = page.locator("#plugin-login")
+
+    def launch_plugin(self):
+        self.plugin_btn.click()
+        expect(self.page.locator("#plugin-frame")).to_be_visible()
+
+    def login_plugin(self, user, passw):
+        self.plugin_user.fill(user)
+        self.plugin_pass.fill(passw)
+        self.submit.click()
+        expect(self.page.locator("#plugin-dashboard")).to_be_visible()
+
+    def perform_actions(self):
+        # Your plugin actions, e.g., self.page.locator("#action-btn").click()
+        pass
